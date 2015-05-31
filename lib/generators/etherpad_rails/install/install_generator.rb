@@ -6,6 +6,7 @@ module EtherpadRails
       end
       def copy_config_file
         template 'config/etherpad.yml'
+        template 'config/initializers/load_etherpad_config.rb'
       end
     end
   end

@@ -1,6 +1,13 @@
 production:
-
+  padurl:
+  padkey:
+  versio:
 development:
-
+  padurl:
+  apikey:
+  version:
 test:
+  padurl:
+  apikey:
+  version:
     
