@@ -2,10 +2,7 @@ module EtherpadRails
   module Connection
     def connect
 
-      config_file = 'config/etherpad.yml'
-      config = YAML::load (File.open(config_file))
-      
-      connected_pad = EtherpadLite.connect config['padurl'], config['apikey'], config['version']
+      connected_pad = EtherpadLite.connect PAD_CONFIG['padurl'], PAD_CONFIG['apikey'], PAD_CONFIG['version']
       connected_pad
     end
   end
