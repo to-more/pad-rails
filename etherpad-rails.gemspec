@@ -1,5 +1,4 @@
-lib = File.expand_path('../lib', __FILE__)
-$LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require File.join(File.dirname(__FILE__), 'lib', 'etherpad_rails', 'version')
 
 Gem::Specification.new do |s|
   s.name         = 'etherpad-rails'
@@ -11,4 +10,5 @@ Gem::Specification.new do |s|
   s.email        = 'to_more@mailoo.org'
   s.files        = Dir.glob("lib/**/*")
   s.require_path = 'lib'
+  s.add_runtime_dependency 'etherpad-lite', '~> 0'
 end
