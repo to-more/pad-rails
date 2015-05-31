@@ -2,7 +2,7 @@ require File.join(File.dirname(__FILE__), 'lib', 'etherpad_rails', 'version')
 
 Gem::Specification.new do |s|
   s.name         = 'etherpad-rails'
-  s.version      = '0.1.7'
+  s.version      = '0.1.28'
   s.date         = '2015-03-23'
   s.summary      = "a little extension of etherpad lite gem to work on rails"
   s.description  = "ruby gem to work with pads on rails"
