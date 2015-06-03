@@ -1,5 +1,5 @@
 require 'spec_helper'
-require 'etherpad_rails/connection/connection.rb'
+require 'etherpad_rails/connection/connection'
 
 describe EtherpadRails::Connection do
   let(:including_class) { Class.new { include EtherpadRails::Connection} }
