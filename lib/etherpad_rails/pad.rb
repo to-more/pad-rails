@@ -15,5 +15,13 @@ module EtherpadRails
       sons = get_son_of @etherpad.pads
       sons
     end
+
+    def map_this pad_title
+      begin
+        map_of @etherpad.get_pad pad_title.to_s if pad_title
+      rescue EtherpadLite::Error => e
+        puts  e
+      end
+    end
   end
 end

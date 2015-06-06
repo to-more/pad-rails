@@ -15,4 +15,11 @@ describe EtherpadRails::Etherpad do
       expect(son_of_pads).not_to eq nil
     end
   end
+
+  describe "#text_of" do
+    it "return a map of the given pad, if exist" do
+      text = @etherpad.map_this :title
+      expect(text).to eq nil
+    end
+  end
 end

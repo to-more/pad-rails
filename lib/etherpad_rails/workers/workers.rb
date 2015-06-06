@@ -12,7 +12,7 @@ module EtherpadRails
     end
 
     def map_of pad
-      { id: pad.id, text: pad.text }
+       { id: pad.id, text: pad.text } if pad
     end
   end
 end
